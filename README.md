@@ -27,7 +27,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 To learn more, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API.
 - [Smart Wallet Docs](https://www.smartwallet.dev/why) - Learn about why Smart Wallets and it's current capabilities.
-- [Coinbase SDK](https://nextjs.org/docs) - learn more about Coinbase SDK.
+- [Coinbase SDK](https://nextjs.org/docs) - Learn more about Coinbase SDK.
 
