@@ -29,5 +29,5 @@ To learn more, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API.
 - [Smart Wallet Docs](https://www.smartwallet.dev/why) - Learn about why Smart Wallets and it's current capabilities.
-- [Coinbase SDK](https://nextjs.org/docs) - Learn more about Coinbase SDK.
+- [Coinbase SDK](https://docs.cloud.coinbase.com/wallet-sdk/docs/welcome) - Learn more about Coinbase SDK.
 
