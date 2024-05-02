@@ -11,7 +11,7 @@ interface CoinbaseSDK {
 // Create Coinbase Context
 export const CoinbaseContext = createContext<CoinbaseSDK | null>(null);
 
-export const CoinbaseWalletProvider = ({ children }: { children: ReactNode }) => {
+export const SmartWalletProvider = ({ children }: { children: ReactNode }) => {
   const provider = sdk.makeWeb3Provider({ options: 'smartWalletOnly' });
 
   return (
