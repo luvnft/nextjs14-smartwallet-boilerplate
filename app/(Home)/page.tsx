@@ -1,8 +1,9 @@
+import { siteConfig } from "@/config/site"
+
+import { Github, Twitter } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { siteConfig } from "@/config/site"
-import { Github, Twitter } from "lucide-react";
 import SmartWallet from "@/components/SmartWallet";
 
 export default function Home() {
@@ -30,7 +31,7 @@ export default function Home() {
 
       <footer className="absolute bottom-5 mt-4 p-5 flex flex-col gap-y-5">
         <code className="text-gray-900 text-center dark:text-gray-100">
-        Next.js 14 Boilerplate for Smart Wallets & Coinbase SDK.
+          {siteConfig.description}
         </code>
         <div className="flex flex-row gap-3 justify-center items-center">
           {Object.entries(siteConfig.links).map(([name, url]) => (

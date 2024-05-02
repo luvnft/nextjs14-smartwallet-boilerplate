@@ -2,7 +2,7 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: 'AppName',
-  description: '',
+  description: 'An opinionated boilerplate to build user-friendly apps using Coinbase Wallet SDK.',
   mainNav: [
     {
       title: 'Home',
