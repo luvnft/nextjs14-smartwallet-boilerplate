@@ -1,3 +1,4 @@
+import HelloWorld from "@/components/HelloWorld";
 import SmartWallet from "@/components/SmartWallet";
 import Image from "next/image";
 
@@ -16,17 +17,7 @@ export default function Home() {
       </div>
 
 
-      <div className="flex flex-col items-center justify-center space-y-6">
-        <h1
-          className="
-          text-3xl font-bold text-center text-gray-900 dark:text-gray-100
-          lg:text-4xl"
-        >
-          Smart Wallets w/ Coinbase SDK
-        </h1>
-
-        <SmartWallet />
-      </div>
+      <HelloWorld />
 
       <code className="absolute bottom-5 mt-4 text-gray-900 text-center p-5 dark:text-gray-100">
         <a href="https://nextjs.org/blog/next-14" target="_blank">Next.js 14</a> Template for Smart Wallets & Coinbase SDK.
