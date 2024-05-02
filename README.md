@@ -1,4 +1,6 @@
-# An opinionated boilerplate to build user-friendly apps using Coinbase Wallet SDK.
+# NextJS 14 Template: SmartWallet boilerplate w/ Coinbase SDK
+
+An opinionated boilerplate to build user-friendly apps using Coinbase Wallet SDK.
 
 
 ## Getting Started
