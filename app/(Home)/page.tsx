@@ -1,6 +1,10 @@
 import HelloWorld from "@/components/HelloWorld";
 import SmartWallet from "@/components/SmartWallet";
 import Image from "next/image";
+import Link from "next/link";
+
+import { siteConfig } from "@/config/site"
+import { Github, Twitter } from "lucide-react";
 
 export default function Home() {
   return (
@@ -19,9 +23,19 @@ export default function Home() {
 
       <HelloWorld />
 
-      <code className="absolute bottom-5 mt-4 text-gray-900 text-center p-5 dark:text-gray-100">
-        <a href="https://nextjs.org/blog/next-14" target="_blank">Next.js 14</a> Template for Smart Wallets & Coinbase SDK.
-      </code>
+      <div className="absolute bottom-5 mt-4 p-5 flex flex-col gap-y-5">
+        <code className="text-gray-900 text-center dark:text-gray-100">
+        Next.js 14 Boilerplate for Smart Wallets & Coinbase SDK.
+        </code>
+        <div className="flex flex-row gap-3 justify-center items-center">
+          {Object.entries(siteConfig.links).map(([name, url]) => (
+            <Link key={name} href={url} target="_blank">
+              {name === 'twitter' && <Twitter className="w-5 h-5 text-neutral-600 hover:text-neutral-400 transition-colors duration-200" />}
+              {name === 'github' && <Github className="w-5 h-5 text-neutral-600 hover:text-neutral-400 transition-colors duration-200" />}
+            </Link>
+          ))}
+        </div>
+      </div>
     </main>
   );
 }

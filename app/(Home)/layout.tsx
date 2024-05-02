@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className={clsx(inter.className, "bg-background h-full")}>
       <SmartWalletProvider>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Navbar appName="NextJS 14 - Smart Wallet Boilerplate"/>
+          <Navbar appName="AppName"/>
           {children}
         </ThemeProvider>
       </SmartWalletProvider>
