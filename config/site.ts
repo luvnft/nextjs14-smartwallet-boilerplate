@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: 'Next 14 - Smart Wallet Boilerplate',
+  name: 'AppName',
   description: '',
   mainNav: [
     {

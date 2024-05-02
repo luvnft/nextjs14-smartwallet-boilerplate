@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { useSmartWallet } from "@/hooks/useSmartWallet";
 import { useState, useEffect } from "react";
@@ -8,13 +8,6 @@ import { Loader, Loader2 } from "lucide-react";
 export default function SmartWallet() {
     const { wallet, isConnected, isConnecting, chainId } = useSmartWallet();
     const [connected, setConnected] = useState<boolean>(isConnected); // Local state management (client-side)
-
-    // @ts-expect-error
-    const isCoinbaseWalletInjected = !!window.coinbaseWalletExtension;
-    if (isCoinbaseWalletInjected) {
-        setConnected(true);
-    }
-
     
     const useWallet = async () => {
         try {

@@ -1,5 +1,4 @@
 import HelloWorld from "@/components/HelloWorld";
-import SmartWallet from "@/components/SmartWallet";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,6 +6,7 @@ import { siteConfig } from "@/config/site"
 import { Github, Twitter } from "lucide-react";
 
 export default function Home() {
+  
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24 gap-8">
       <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
@@ -20,10 +20,9 @@ export default function Home() {
         />
       </div>
 
-
       <HelloWorld />
 
-      <div className="absolute bottom-5 mt-4 p-5 flex flex-col gap-y-5">
+      <footer className="absolute bottom-5 mt-4 p-5 flex flex-col gap-y-5">
         <code className="text-gray-900 text-center dark:text-gray-100">
         Next.js 14 Boilerplate for Smart Wallets & Coinbase SDK.
         </code>
@@ -35,7 +34,7 @@ export default function Home() {
             </Link>
           ))}
         </div>
-      </div>
+      </footer>
     </main>
   );
 }
