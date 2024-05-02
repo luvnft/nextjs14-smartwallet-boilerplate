@@ -1,4 +1,4 @@
-# SmartWallets Boilerplate built w/ Coinbase SDK
+# SmartWallets Boilerplate featuring Next 14 & Coinbase SDK
 
 An opinionated boilerplate to build user-friendly apps using Coinbase Wallet SDK.
 
