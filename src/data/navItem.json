@@ -3,12 +3,4 @@
         "name": "Home",
         "link": "/"
     },
-    {
-        "name": "Docs",
-        "link": "/docs"
-    },
-    {
-        "name": "About",
-        "link": "/about"
-    }
 ]
