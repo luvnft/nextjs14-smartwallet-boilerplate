@@ -1,18 +1,25 @@
 'use client'
 
 import { createContext, useContext, ReactNode } from "react";
-import { sdk } from "@/lib/coinbase-sdk/setup";
+import { CoinbaseWalletSDK } from '@coinbase/wallet-sdk'
+import { siteConfig } from "@/config/site";
+ 
+// Create Coinbase SDK instance
+export const sdk = typeof window !== "undefined" ? new CoinbaseWalletSDK({
+  appName: siteConfig.name,
+  appChainIds: [8453]
+}) : null;
 
 // Define the type for the provider value
 interface CoinbaseSDK {
-  provider: ReturnType<typeof sdk.makeWeb3Provider>;
+  provider: any // @TODO Change the type here as per the SDK documentation
 }
 
 // Create Coinbase Context
 export const CoinbaseContext = createContext<CoinbaseSDK | null>(null);
 
 export const SmartWalletProvider = ({ children }: { children: ReactNode }) => {
-  const provider = sdk.makeWeb3Provider({ options: 'smartWalletOnly' });
+  const provider = sdk ? sdk.makeWeb3Provider({ options: 'smartWalletOnly' }) : null;
 
   return (
     <CoinbaseContext.Provider value={{ provider }}>

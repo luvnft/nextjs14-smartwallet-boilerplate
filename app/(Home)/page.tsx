@@ -1,9 +1,9 @@
-import HelloWorld from "@/components/HelloWorld";
 import Image from "next/image";
 import Link from "next/link";
 
 import { siteConfig } from "@/config/site"
 import { Github, Twitter } from "lucide-react";
+import SmartWallet from "@/components/SmartWallet";
 
 export default function Home() {
   
@@ -20,7 +20,13 @@ export default function Home() {
         />
       </div>
 
-      <HelloWorld />
+      {/** Smart Wallet Demo */}
+      <div className="flex flex-col items-center justify-center space-y-6">
+          <h1 className="text-xl md:text-3xl font-bold text-center text-gray-900 dark:text-gray-100 lg:text-4xl">
+              Smart Wallets w/ Coinbase SDK
+          </h1>
+          <SmartWallet />
+      </div>
 
       <footer className="absolute bottom-5 mt-4 p-5 flex flex-col gap-y-5">
         <code className="text-gray-900 text-center dark:text-gray-100">
