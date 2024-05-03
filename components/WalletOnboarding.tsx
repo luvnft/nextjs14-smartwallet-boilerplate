@@ -55,8 +55,8 @@ export default function WalletOnboarding() {
             </DrawerTrigger>
             <DrawerContent className="flex justify-start items-center h-[600px]">
                 <DrawerHeader className="mt-auto text-center">
-                    <DrawerTitle className="text-3xl">Don{"'"}t have a wallet?</DrawerTitle>
-                    <DrawerDescription className="text-xl text-center">Create one in seconds.</DrawerDescription>
+                    <DrawerTitle className="text-3xl text-center">Don{"'"}t have a wallet?</DrawerTitle>
+                    <DrawerDescription className="text-md md:text-lg text-center">Create one in seconds to get started.</DrawerDescription>
                 </DrawerHeader>
             <DrawerFooter className="flex flex-row w-full justify-between">
                 <DrawerClose className="w-full">
