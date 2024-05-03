@@ -1,8 +1,9 @@
 'use client'
 
-import { createContext, useContext, ReactNode } from "react";
+import { createContext, ReactNode } from "react";
 import { CoinbaseWalletSDK } from '@coinbase/wallet-sdk'
 import { siteConfig } from "@/config/site";
+import { coinbaseConfig } from "@/config/coinbase";
  
 // Create Coinbase SDK instance
 export const sdk = typeof window !== "undefined" ? new CoinbaseWalletSDK({
@@ -20,7 +21,7 @@ interface CoinbaseSDK {
 export const CoinbaseContext = createContext<CoinbaseSDK | null>(null);
 
 export const SmartWalletProvider = ({ children }: { children: ReactNode }) => {
-  const provider = sdk ? sdk.makeWeb3Provider(siteConfig.coinbase) : null;
+  const provider = sdk ? sdk.makeWeb3Provider(coinbaseConfig) : null;
 
   return (
     <CoinbaseContext.Provider value={{ provider }}>
