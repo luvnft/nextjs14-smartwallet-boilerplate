@@ -12,14 +12,15 @@ export const sdk = typeof window !== "undefined" ? new CoinbaseWalletSDK({
 
 // Define the type for the provider value
 interface CoinbaseSDK {
-  provider: any // @TODO Change the type here as per the SDK documentation
+  provider: any // @TODO Correctly type the provider here as per the Coinbase's SDK documentation
 }
 
-// Create Coinbase Context
+
+// Define CoinbaseSDK Context
 export const CoinbaseContext = createContext<CoinbaseSDK | null>(null);
 
 export const SmartWalletProvider = ({ children }: { children: ReactNode }) => {
-  const provider = sdk ? sdk.makeWeb3Provider({ options: 'smartWalletOnly' }) : null;
+  const provider = sdk ? sdk.makeWeb3Provider(siteConfig.coinbase) : null;
 
   return (
     <CoinbaseContext.Provider value={{ provider }}>
