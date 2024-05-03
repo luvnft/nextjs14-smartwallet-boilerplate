@@ -9,9 +9,9 @@ export default function SmartWallet() {
     const { wallet, isConnected, isConnecting, chainId } = useSmartWallet();
     const [connected, setConnected] = useState<boolean>(isConnected); // Local state management (client-side)
 
+    // Check if coinbaseWalletExtension extension is injected before-hand to avoid compatibility issues.
     useEffect(() => {
         if (typeof window !== "undefined") {
-            // Check if coinbaseWalletExtension exists before accessing it
             // @ts-expect-error
             const isCoinbaseWalletInjected = !!window.coinbaseWalletExtension;
             if (isCoinbaseWalletInjected) {
