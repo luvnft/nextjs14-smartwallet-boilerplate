@@ -20,9 +20,10 @@ export default function SmartWallet() {
         }
     }, []);
     
+
     const useWallet = async () => {
         try {
-            const address = await wallet(); // Call the connectWallet function, returns user's addresses
+            const address = await wallet(); // Call the connectWallet function, this returns user's addresses [an array of]
             console.log("Smart wallet generated successfully:", address); // Print out generated wallet
         } catch (error) {
             console.error("Error generating smart wallet:", error); // Error reporting
