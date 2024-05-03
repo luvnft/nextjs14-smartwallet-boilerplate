@@ -64,7 +64,7 @@ export default function WalletOnboarding() {
                     Cancel
                 </motion.button>
                 </DrawerClose>
-                <motion.button whileTap={{ scale: 0.9 }} onClick={useWallet} disabled={connected} className="inline-flex items-center justify-center whitespace-nowrap transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 rounded-3xl w-full py-3 px-6 bg-blue-500 hover:bg-blue-500/80 text-white font-semibold text-sm"
+                <motion.button whileTap={{ scale: 0.9 }} onClick={useWallet} disabled={isConnecting} className="inline-flex items-center justify-center whitespace-nowrap transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 rounded-3xl w-full py-3 px-6 bg-blue-500 hover:bg-blue-500/80 text-white font-semibold text-sm"
                     aria-label={connected ? "Connected" : "Try Smart Wallet"}
                 >
                     {isConnecting ? <Loader2 className="animate-spin w-5 h-5 text-white/80" /> : connected ? `Connected` : "Try Smart Wallet"}
