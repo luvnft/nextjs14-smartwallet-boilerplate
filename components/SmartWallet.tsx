@@ -1,9 +1,13 @@
 'use client';
 
-import { useSmartWallet } from "@/hooks/useSmartWallet";
 import { useEffect, useState } from "react";
+import { useSmartWallet } from "@/hooks/useSmartWallet";
+
 import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
+import { motion } from "framer-motion"
+
+
 
 export default function SmartWallet() {
     const { wallet, isConnected, isConnecting, chainId } = useSmartWallet();
@@ -34,11 +38,11 @@ export default function SmartWallet() {
 
     return (
         <div>
-            <Button onClick={useWallet} disabled={connected} className="inline-flex rounded-3xl w-40 py-3 px-6 bg-white text-black font-semibold text-sm"
+            <motion.button whileTap={{ scale: 0.75 }} onClick={useWallet} disabled={connected} className="inline-flex items-center justify-center whitespace-nowrap transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 rounded-3xl w-40 py-3 px-6 bg-white hover:bg-white/80 text-black font-semibold text-sm"
                 aria-label={connected ? "Connected" : "Try Smart Wallet"}
             >
                 {isConnecting ? <Loader2 className="animate-spin w-5 h-5 text-black" /> : connected ? `Connected` : "Try Smart Wallet"}
-            </Button>
+            </motion.button>
         </div>
     );
 }
