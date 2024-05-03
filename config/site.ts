@@ -12,5 +12,6 @@ export const siteConfig = {
   links: {
     twitter: 'https://twitter.com/fewmoreliqs',
     github: 'https://github.com/rokitgg/nextjs14-smartwallet-boilerplate',
+    docs: ''
   },
 };
