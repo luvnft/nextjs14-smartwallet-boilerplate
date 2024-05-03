@@ -31,7 +31,7 @@ export default function Home() {
       </div>
 
       <footer className="absolute bottom-5 mt-4 p-5 flex flex-col justify-center items-center gap-y-5">
-        <code className="hidden md:flex text-gray-900 text-center dark:text-gray-100">
+        <code className="hidden lg:flex text-gray-900 text-center text-xs md:text-sm dark:text-gray-100">
           {siteConfig.description}
         </code>
         <div className="flex flex-row gap-3 justify-center items-center">
