@@ -60,14 +60,14 @@ export default function WalletOnboarding() {
                 </DrawerHeader>
             <DrawerFooter className="flex flex-row w-full justify-between">
                 <DrawerClose className="w-full">
-                <motion.button whileTap={{ scale: 0.9 }} className="inline-flex w-full items-center justify-center whitespace-nowrap transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 rounded-3xl py-3 px-6 bg-red-500 hover:bg-red-500/80 text-black font-semibold text-sm">
+                <motion.button whileTap={{ scale: 0.9 }} className="inline-flex w-full items-center justify-center whitespace-nowrap transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 rounded-3xl py-3 px-6 bg-red-500 hover:bg-red-500/80 text-white font-semibold text-sm">
                     Cancel
                 </motion.button>
                 </DrawerClose>
-                <motion.button whileTap={{ scale: 0.9 }} onClick={useWallet} disabled={connected} className="inline-flex items-center justify-center whitespace-nowrap transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 rounded-3xl w-full py-3 px-6 bg-blue-500 hover:bg-blue-500/80 text-black font-semibold text-sm"
+                <motion.button whileTap={{ scale: 0.9 }} onClick={useWallet} disabled={connected} className="inline-flex items-center justify-center whitespace-nowrap transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 rounded-3xl w-full py-3 px-6 bg-blue-500 hover:bg-blue-500/80 text-white font-semibold text-sm"
                     aria-label={connected ? "Connected" : "Try Smart Wallet"}
                 >
-                    {isConnecting ? <Loader2 className="animate-spin w-5 h-5 text-black" /> : connected ? `Connected` : "Try Smart Wallet"}
+                    {isConnecting ? <Loader2 className="animate-spin w-5 h-5 text-white/80" /> : connected ? `Connected` : "Try Smart Wallet"}
                 </motion.button>
             </DrawerFooter>
             </DrawerContent>
