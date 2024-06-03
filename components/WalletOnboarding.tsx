@@ -50,12 +50,12 @@ export default function WalletOnboarding() {
         <Drawer>
             <DrawerTrigger>
                 <motion.button whileTap={{ scale: 0.9 }} className="inline-flex items-center justify-center whitespace-nowrap transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 rounded-3xl w-40 py-3 px-6 bg-white hover:bg-white/80 text-black font-semibold text-sm">
-                        Create Wallo
+                        Create 🅰️ Wallo
                 </motion.button>
             </DrawerTrigger>
             <DrawerContent className="flex justify-start items-center h-[600px]">
                 <DrawerHeader className="mt-auto text-center">
-                    <DrawerTitle className="text-3xl text-center">Don{"'"}t have a wallet?</DrawerTitle>
+                    <DrawerTitle className="text-3xl text-center">Don{"'"}t have a wallo?</DrawerTitle>
                     <DrawerDescription className="text-md md:text-lg text-center">Create one in seconds to get started.</DrawerDescription>
                 </DrawerHeader>
             <DrawerFooter className="flex flex-row w-full justify-between">
@@ -65,9 +65,9 @@ export default function WalletOnboarding() {
                 </motion.button>
                 </DrawerClose>
                 <motion.button whileTap={{ scale: 0.9 }} onClick={useWallet} disabled={isConnecting} className="inline-flex items-center justify-center whitespace-nowrap transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 rounded-3xl w-full py-3 px-6 bg-blue-500 hover:bg-blue-500/80 text-white font-semibold text-sm"
-                    aria-label={connected ? "Connected" : "Try Smart Wallet"}
+                    aria-label={connected ? "Connected" : "Create Wallo"}
                 >
-                    {isConnecting ? <Loader2 className="animate-spin w-5 h-5 text-white/80" /> : connected ? `Connected` : "Try Smart Wallet"}
+                    {isConnecting ? <Loader2 className="animate-spin w-5 h-5 text-white/80" /> : connected ? `Connected` : "Create Wallo"}
                 </motion.button>
             </DrawerFooter>
             </DrawerContent>

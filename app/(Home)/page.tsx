@@ -1,8 +1,10 @@
 import { siteConfig } from "@/config/site"
 
-import { Discord, Twitter } from "lucide-react";
+import { Twitter } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Discord } from '@lucide-icons/discord';
+
 
 import SmartWallet from "@/components/SmartWallet";
 import WalletOnboarding from "@/components/WalletOnboarding";
