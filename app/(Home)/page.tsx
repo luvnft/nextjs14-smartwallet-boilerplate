@@ -3,7 +3,7 @@ import { siteConfig } from "@/config/site"
 import { Twitter } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Discord } from '@lucide-icons/discord';
+import { FaDiscord } from 'react-icons/fa';
 
 
 import SmartWallet from "@/components/SmartWallet";
@@ -40,7 +40,7 @@ export default function Home() {
           {Object.entries(siteConfig.links).map(([name, url]) => (
             <Link key={name} href={url} target="_blank">
               {name === 'twitter' && <Twitter className="w-5 h-5 text-neutral-600 hover:text-neutral-400 transition-colors duration-200" />}
-              {name === 'discord' && <Discord className="w-5 h-5 text-neutral-600 hover:text-neutral-400 transition-colors duration-200" />}
+              {name === 'discord' && <FaDiscord className="w-5 h-5 text-neutral-600 hover:text-neutral-400 transition-colors duration-200" />}
             </Link>
           ))}
         </div>
