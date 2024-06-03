@@ -1,20 +1,22 @@
+import { DiscordLogoIcon } from "@radix-ui/react-icons";
+
 export type SiteConfig = typeof siteConfig;
 
 type Preference = 'all' | 'smartWalletOnly' | 'eoaOnly';
 
 // Define the site configuration object
 export const siteConfig = {
-  name: 'AppName', // The name of the application
-  description: 'An opinionated boilerplate to build user-friendly apps using Coinbase Wallet SDK.', // Description of the application
+  name: 'Wallo', // The name of the application
+  description: 'ATL5D partnered with Coinbase to solve the problem of 60K+ Atlanta un-banked households having the ability to have a bank account. Subscribe to ATL5D to receive $ATL B🍑🍑ty money airdropped to your verified ATL5D account. Verify all $ATL transactions in this Base <a href="https://base.blockscout.com/" style="font-weight:bold;">Explorer</a> by searching the wallet addresses involved in the transaction.', // Description of the application
   mainNav: [
     {
-      title: 'Home',
-      href: '/',
+      title: 'Wallo',
+      href: 'https://wallo.atl5d.com',
     },
   ], // Main navigation links
   links: {
-    twitter: 'https://twitter.com/fewmoreliqs',
-    github: 'https://github.com/rokitgg/nextjs14-smartwallet-boilerplate',
+    twitter: 'https://twitter.com/atl5d',
+    DiscordLogoIcon: 'https://discord.com/servers/atl5d-1244450286337003520',
     docs: ''
   }, // Social media and documentation links
   coinbase: { 

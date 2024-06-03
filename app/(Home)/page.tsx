@@ -1,6 +1,6 @@
 import { siteConfig } from "@/config/site"
 
-import { Github, Twitter } from "lucide-react";
+import { Discord, Twitter } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -25,7 +25,7 @@ export default function Home() {
       {/** Smart Wallet Demo */}
       <div className="flex flex-col items-center justify-center space-y-6">
           <h1 className="text-xl md:text-3xl font-bold text-center text-gray-900 dark:text-gray-100 lg:text-4xl">
-              Smart Wallets w/ Coinbase SDK
+              Create 🅰️ 🅰️TL5️⃣D 🏦head Coinbase Account For Your Wallo
           </h1>
           <WalletOnboarding />
       </div>
@@ -38,7 +38,7 @@ export default function Home() {
           {Object.entries(siteConfig.links).map(([name, url]) => (
             <Link key={name} href={url} target="_blank">
               {name === 'twitter' && <Twitter className="w-5 h-5 text-neutral-600 hover:text-neutral-400 transition-colors duration-200" />}
-              {name === 'github' && <Github className="w-5 h-5 text-neutral-600 hover:text-neutral-400 transition-colors duration-200" />}
+              {name === 'discord' && <Discord className="w-5 h-5 text-neutral-600 hover:text-neutral-400 transition-colors duration-200" />}
             </Link>
           ))}
         </div>

@@ -50,7 +50,7 @@ export default function WalletOnboarding() {
         <Drawer>
             <DrawerTrigger>
                 <motion.button whileTap={{ scale: 0.9 }} className="inline-flex items-center justify-center whitespace-nowrap transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 rounded-3xl w-40 py-3 px-6 bg-white hover:bg-white/80 text-black font-semibold text-sm">
-                        Launch App
+                        Create Wallo
                 </motion.button>
             </DrawerTrigger>
             <DrawerContent className="flex justify-start items-center h-[600px]">
