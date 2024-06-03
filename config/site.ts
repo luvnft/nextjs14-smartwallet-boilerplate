@@ -7,7 +7,7 @@ type Preference = 'all' | 'smartWalletOnly' | 'eoaOnly';
 // Define the site configuration object
 export const siteConfig = {
   name: 'Wallo', // The name of the application
-  description: 'ATL5D partnered with Coinbase to solve the problem of 60K+ Atlanta un-banked households having the ability to have a bank account. Subscribe to ATL5D to receive $ATL B🍑🍑ty money airdropped to your verified ATL5D account. Verify all $ATL transactions in this Base <a href="https://base.blockscout.com/" style="font-weight:bold;">Explorer</a> by searching the wallet addresses involved in the transaction.', // Description of the application
+  description: 'ATL5D partnered with Coinbase to solve the problem of 60K+ Atlanta un-banked households having the ability to have a bank account. Subscribe to ATL5D to receive $ATL B🍑🍑ty money airdropped to your verified ATL5D Wallo account. Verify all $ATL transactions in a Base Explorer by searching the wallet addresses involved in the transaction.', // Description of the application
   mainNav: [
     {
       title: 'Wallo',
