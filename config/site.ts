@@ -16,7 +16,7 @@ export const siteConfig = {
   ], // Main navigation links
   links: {
     twitter: 'https://twitter.com/atl5d',
-    FaDiscord: 'https://discord.com/servers/atl5d-1244450286337003520',
+    discord: 'https://discord.com/servers/atl5d-1244450286337003520',
     docs: ''
   }, // Social media and documentation links
   coinbase: { 
@@ -26,3 +26,4 @@ export const siteConfig = {
     // Learn More: https://www.smartwallet.dev/sdk/makeWeb3Provider
   }
 };
+
