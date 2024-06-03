@@ -1,4 +1,4 @@
-import { DiscordLogoIcon } from "@radix-ui/react-icons";
+import { FaDiscord } from 'react-icons/fa';
 
 export type SiteConfig = typeof siteConfig;
 
@@ -16,7 +16,7 @@ export const siteConfig = {
   ], // Main navigation links
   links: {
     twitter: 'https://twitter.com/atl5d',
-    DiscordLogoIcon: 'https://discord.com/servers/atl5d-1244450286337003520',
+    FaDiscord: 'https://discord.com/servers/atl5d-1244450286337003520',
     docs: ''
   }, // Social media and documentation links
   coinbase: { 
