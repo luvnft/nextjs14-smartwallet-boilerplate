@@ -27,7 +27,7 @@ export default function Home() {
       {/** Smart Wallet Demo */}
       <div className="flex flex-col items-center justify-center space-y-6">
           <h1 className="text-xl md:text-3xl font-bold text-center text-gray-900 dark:text-gray-100 lg:text-4xl">
-              🏦head Coinbase Account For Your Wallo
+              🏦Head Coinbase Account For Your Wallo
           </h1>
           <WalletOnboarding />
       </div>
