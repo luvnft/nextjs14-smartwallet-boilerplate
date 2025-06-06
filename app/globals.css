@@ -6,7 +6,7 @@
   :root {
     --background: 255 255 255;
     --foreground: 0 0 0;
-    --border: 229 229 229; /* Add this border color definition */
+    --border: 229 229 229;
 
     --primary: 0 195 137;
     --primary-foreground: 255 255 255;
@@ -21,7 +21,7 @@
   .dark {
     --background: 0 0 0;
     --foreground: 255 255 255;
-    --border: 38 38 38; /* Dark mode border color */
+    --border: 38 38 38;
 
     --primary: 0 195 137;
     --primary-foreground: 0 0 0;
