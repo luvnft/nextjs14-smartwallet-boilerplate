@@ -39,9 +39,9 @@ export default function SmartWallet() {
     return (
         <div>
             <motion.button whileTap={{ scale: 0.9 }} onClick={useWallet} disabled={connected} className="inline-flex items-center justify-center whitespace-nowrap transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 rounded-3xl w-40 py-3 px-6 bg-white hover:bg-white/80 text-black font-semibold text-sm"
-                aria-label={connected ? "Connected" : "Create 🅰️ Wallo"}
+                aria-label={connected ? "Connected" : "CREATE W🅰️LLO"}
             >
-                {isConnecting ? <Loader2 className="animate-spin w-5 h-5 text-black" /> : connected ? `Connected` : "Create 🅰️ Wallo"}
+                {isConnecting ? <Loader2 className="animate-spin w-5 h-5 text-black" /> : connected ? `Connected` : "Create W🅰️LLO"}
             </motion.button>
         </div>
     );
