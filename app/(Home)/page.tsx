@@ -24,7 +24,7 @@ export default function Home() {
       {/* Smart Wallet Demo */}
       <div className="flex flex-col items-center justify-center space-y-6">
         <h1 className="text-4xl font-bold text-center text-gray-900 dark:text-gray-100">
-          The $ATL Atlanta Coinbase Trust Account
+          ATL5D $ATL Atlanta Loyalty Rewards Wallet
         </h1>
         <WalletOnboarding />
       </div>
@@ -35,7 +35,7 @@ export default function Home() {
           🎯 Follow @atl5d on TikTok & Collect 1000 $ATL!
         </h2>
         <p className="text-center text-gray-600 dark:text-gray-400">
-          Join the movement and earn rewards by engaging with our content.
+          Join the movement and earn $ATL rewards by taggin @ATL5D with proof of shopping in Atlanta.
         </p>
         <div className="flex space-x-6">
           <Link href="https://www.tiktok.com/@atl5d" target="_blank" rel="noopener noreferrer">
