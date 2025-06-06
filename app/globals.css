@@ -8,14 +8,19 @@
     --foreground: 0 0 0;
     --border: 229 229 229;
 
-    --primary: 0 195 137;
+    /* Atlanta United colors */
+    --primary: 166 25 46;  /* #A6192E - red */
     --primary-foreground: 255 255 255;
-
-    --secondary: 255 215 0;
+    
+    --secondary: 255 215 0;  /* #FFD700 - gold */
     --secondary-foreground: 0 0 0;
-
-    --accent: 0 0 0;
+    
+    --accent: 0 0 0;  /* black */
     --accent-foreground: 255 255 255;
+
+    /* Gradient background colors */
+    --gradient-from: var(--primary);
+    --gradient-to: var(--accent);
   }
 
   .dark {
@@ -23,14 +28,18 @@
     --foreground: 255 255 255;
     --border: 38 38 38;
 
-    --primary: 0 195 137;
-    --primary-foreground: 0 0 0;
-
+    --primary: 166 25 46;
+    --primary-foreground: 255 255 255;
+    
     --secondary: 255 215 0;
     --secondary-foreground: 0 0 0;
-
+    
     --accent: 255 255 255;
     --accent-foreground: 0 0 0;
+
+    /* Dark mode gradient */
+    --gradient-from: var(--accent);
+    --gradient-to: var(--primary);
   }
 }
 
@@ -39,6 +48,6 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-gradient-to-br from-[rgb(var(--gradient-from))] to-[rgb(var(--gradient-to))] text-foreground;
   }
 }
