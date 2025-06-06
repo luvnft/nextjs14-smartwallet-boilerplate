@@ -24,6 +24,10 @@ const config: Config = {
           foreground: "rgb(var(--accent-foreground))",
         },
       },
+      gradientColorStops: {
+        'from': 'rgb(var(--gradient-from))',
+        'to': 'rgb(var(--gradient-to))',
+      },
       borderColor: ({ theme }: { theme: (path: string) => string }) => ({
         DEFAULT: theme('colors.border'),
       }),
