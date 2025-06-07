@@ -51,7 +51,7 @@ export default function WalletOnboarding() {
             </DrawerTrigger>
             <DrawerContent className="bg-[#1a1a1a] text-white h-[60vh]">
                 <DrawerHeader className="text-center mt-8">
-                    <DrawerTitle className="text-2xl">Don't have a W🅰️LLO?</DrawerTitle>
+                    <DrawerTitle className="text-2xl">Don&apos;t have a W🅰️LLO?</DrawerTitle>
                     <DrawerDescription className="text-[#FFD700]">
                         Create one in seconds to get started 🚀
                     </DrawerDescription>
@@ -60,7 +60,7 @@ export default function WalletOnboarding() {
                 <div className="flex-1 flex items-center justify-center">
                     <div className="text-center space-y-2">
                         <div className="text-5xl">🏦</div>
-                        <p className="text-sm opacity-80">Let's see what Zone has the most $ATL LUV</p>
+                        <p className="text-sm opacity-80">Let&apos;s see what Zone has the most $ATL LUV</p>
                     </div>
                 </div>
                 

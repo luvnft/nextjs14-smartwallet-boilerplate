@@ -40,7 +40,7 @@ export default function Home() {
             Atlanta Loyalty Rewards Wallet 💰
           </p>
           <p className="text-sm opacity-80">
-            "A Bankhead king who loved his city more than music" 🎤🏙️
+            &quot;A Bankhead king who loved his city more than music&quot; 🎤🏙️
           </p>
         </div>
 
@@ -85,9 +85,10 @@ export default function Home() {
 
         {/* CTA */}
         <div className="text-center text-sm opacity-80 max-w-md">
-          <p>🎯 Follow @ATL5D socials @ATLVERSE YT & collect 1000 $ATL!</p>
-          <p className="mt-1">Tag @ATL5D with proof of shopping in Atlanta to earn daily rewards 🏷️ that can
-            be reedemed for Atlanta ATL5D (D-commerce) marketing.
+          <p>🎯 Follow @ATL5D socials @ATLVERSE YT &amp; collect 1000 $ATL!</p>
+          <p className="mt-1">
+            Tag @ATL5D with proof of shopping in Atlanta to earn daily rewards 🏷️ that can
+            be redeemed for Atlanta ATL5D (D-commerce) marketing.
           </p>
         </div>
         {/* Original purpose */}
