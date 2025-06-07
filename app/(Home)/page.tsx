@@ -1,47 +1,35 @@
 import { siteConfig } from "@/config/site";
 import { Twitter } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
-import { FaDiscord, FaTiktok, FaMedal } from 'react-icons/fa';
+import { FaDiscord, FaTiktok, FaMedal } from "react-icons/fa";
 
 import WalletOnboarding from "@/components/WalletOnboarding";
 
 const topHolders = [
-  { rank: 1, address: "0xATL...5D1", amount: "1.2M $ATL", emoji: "👑" },
-  { rank: 2, address: "0xATL...5D2", amount: "890K $ATL", emoji: "🌟" },
-  { rank: 3, address: "0xATL...5D3", amount: "750K $ATL", emoji: "💎" },
-  { rank: 4, address: "0xATL...5D4", amount: "500K $ATL", emoji: "🔥" },
-  { rank: 5, address: "0xATL...5D5", amount: "420K $ATL", emoji: "🪙" },
+  { rank: 1, address: "0xATL...5D1", username: "@kingATL", amount: "1.2M $ATL", emoji: "👑" },
+  { rank: 2, address: "0xATL...5D2", username: "@starATL", amount: "890K $ATL", emoji: "🌟" },
+  { rank: 3, address: "0xATL...5D3", username: "@diamondATL", amount: "750K $ATL", emoji: "💎" },
+  { rank: 4, address: "0xATL...5D4", username: "@fireATL", amount: "500K $ATL", emoji: "🔥" },
+  { rank: 5, address: "0xATL...5D5", username: "@coinATL", amount: "420K $ATL", emoji: "🪙" },
 ];
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-8 md:p-16 bg-gradient-to-b from-[#A6192E] to-black text-white">
-      {/* Header with spiritual touch */}
-      <header className="w-full flex justify-between items-center mb-8">
-        <div className="flex items-center space-x-2">
-          <span className="text-2xl">🙏🏾</span>
-          <h1 className="text-xl font-bold">W🅰️LLO</h1>
-        </div>
-        <div className="text-xs bg-black/30 px-3 py-1 rounded-full">
-          <span>🕊️ R.I.P. Shawty Lo</span>
-        </div>
-      </header>
-
       {/* Main content */}
       <div className="flex flex-col items-center w-full max-w-md space-y-8">
         {/* Hero section */}
-        <div className="text-center space-y-4">
-          <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#FFD700] to-white">
-            IN $ATL WE TRUST
+        <section className="text-center space-y-5">
+          <h1 className="text-5xl font-extrabold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-[#FFD700] to-white drop-shadow">
+            IN $ATL <br className="md:hidden" /> WE TRUST
           </h1>
-          <p className="text-lg opacity-90">
-            W🅰️LLO is Atlanta's trusted loyalty rewards wallet 💰
+          <p className="text-base md:text-lg opacity-90">
+            W🅰️LLO is Atlanta’s #1 loyalty rewards wallet 💰
           </p>
-          <p className="text-sm opacity-80">
-          &quot;Let&#39;s see on-chain who&#39;s running $ATL&quot; 🎤🏙️
+          <p className="text-sm opacity-75 italic">
+            “Let’s see on-chain who’s running $ATL” 🎤🏙️
           </p>
-        </div>
+        </section>
 
         {/* Wallet onboarding */}
         <div className="w-full">
@@ -56,9 +44,12 @@ export default function Home() {
           <div className="space-y-2">
             {topHolders.map((holder) => (
               <div key={holder.rank} className="flex justify-between items-center p-2 hover:bg-black/30 rounded-lg">
-                <div className="flex items-center space-x-3">
-                  <span className="text-lg">{holder.emoji}</span>
-                  <span className="font-medium">{holder.address}</span>
+                <div className="flex flex-col">
+                  <div className="flex items-center space-x-3">
+                    <span className="text-lg">{holder.emoji}</span>
+                    <span className="font-medium">{holder.address}</span>
+                  </div>
+                  <span className="text-xs opacity-70">{holder.username}</span>
                 </div>
                 <span className="font-bold text-[#FFD700]">{holder.amount}</span>
               </div>
@@ -80,6 +71,11 @@ export default function Home() {
           <Link href={siteConfig.links.discord} target="_blank" rel="noopener noreferrer">
             <FaDiscord className="w-8 h-8 text-white hover:text-[#FFD700] transition-colors duration-200" />
           </Link>
+        </div>
+
+        {/* R.I.P. Shawty Lo badge */}
+        <div className="text-xs bg-black/30 px-3 py-1 rounded-full">
+          <span>🕊️ R.I.P. Shawty Lo</span>
         </div>
 
         {/* CTA */}
