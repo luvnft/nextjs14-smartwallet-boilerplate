@@ -2,7 +2,7 @@ export const siteConfig = {
   name: 'WALLO',
   description: (
     <>
-      🌟 <strong>WALLO Mission:</strong> 🅰️TL5️⃣D × Coinbase collab to bank the unbanked and empower ATL creators 🏦✨
+      🌟 <strong>W🅰️LLO Mission:</strong> 🅰️TL5️⃣D × Coinbase collab to bank the unbanked and empower ATL creators 🏦✨
       <br /><br />
       Solving two big ATL problems:<br />
       1️⃣ 60K+ unbanked households now get financial access<br />

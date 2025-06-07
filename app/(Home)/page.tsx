@@ -21,7 +21,7 @@ export default function Home() {
       <header className="w-full flex justify-between items-center mb-8">
         <div className="flex items-center space-x-2">
           <span className="text-2xl">🙏🏾</span>
-          <h1 className="text-xl font-bold">WALLO</h1>
+          <h1 className="text-xl font-bold">W🅰️LLO</h1>
         </div>
         <div className="text-xs bg-black/30 px-3 py-1 rounded-full">
           <span>🕊️ R.I.P. Shawty Lo</span>
@@ -36,7 +36,7 @@ export default function Home() {
             IN $ATL WE TRUST
           </h1>
           <p className="text-lg opacity-90">
-            Wallo is Atlanta's trusted loyalty rewards wallet 💰
+            W🅰️LLO is Atlanta's trusted loyalty rewards wallet 💰
           </p>
           <p className="text-sm opacity-80">
             &quot;Let's see on-chain who's running $ATL&quot; 🎤🏙️

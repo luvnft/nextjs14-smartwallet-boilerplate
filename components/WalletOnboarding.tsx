@@ -46,7 +46,7 @@ export default function WalletOnboarding() {
                     whileHover={{ scale: 1.02 }}
                     className="w-full py-4 px-6 rounded-xl bg-gradient-to-r from-[#FFD700] to-[#A6192E] text-black font-bold text-lg shadow-lg"
                 >
-                    {connected ? "🅰️ Wallo Ready" : "✨ CREATE W🅰️LLO"}
+                    {connected ? "W🅰️LLO Ready" : "✨ CREATE W🅰️LLO"}
                 </motion.button>
             </DrawerTrigger>
             <DrawerContent className="bg-[#1a1a1a] text-white h-[60vh]">
@@ -84,7 +84,7 @@ export default function WalletOnboarding() {
                         ) : connected ? (
                             "✅ Connected"
                         ) : (
-                            "Create My Wallo"
+                            "Create My W🅰️LLO"
                         )}
                     </motion.button>
                 </DrawerFooter>
