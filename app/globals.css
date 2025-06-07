@@ -4,9 +4,9 @@
 
 @layer base {
   :root {
-    --background: 255 255 255;
-    --foreground: 0 0 0;
-    --border: 229 229 229;
+    --background: 0 0 0;
+    --foreground: 255 255 255;
+    --border: 56 56 56;
 
     /* Atlanta United colors */
     --primary: 166 25 46;  /* #A6192E - red */
@@ -15,18 +15,18 @@
     --secondary: 255 215 0;  /* #FFD700 - gold */
     --secondary-foreground: 0 0 0;
     
-    --accent: 0 0 0;  /* black */
-    --accent-foreground: 255 255 255;
+    --accent: 255 255 255;  /* white */
+    --accent-foreground: 0 0 0;
 
     /* Gradient background colors */
     --gradient-from: var(--primary);
-    --gradient-to: var(--accent);
+    --gradient-to: 0 0 0; /* black */
   }
 
   .dark {
     --background: 0 0 0;
     --foreground: 255 255 255;
-    --border: 38 38 38;
+    --border: 56 56 56;
 
     --primary: 166 25 46;
     --primary-foreground: 255 255 255;
@@ -38,8 +38,8 @@
     --accent-foreground: 0 0 0;
 
     /* Dark mode gradient */
-    --gradient-from: var(--accent);
-    --gradient-to: var(--primary);
+    --gradient-from: var(--primary);
+    --gradient-to: 0 0 0;
   }
 }
 
@@ -48,6 +48,18 @@
     @apply border-border;
   }
   body {
-    @apply bg-gradient-to-br from-[rgb(var(--gradient-from))] to-[rgb(var(--gradient-to))] text-foreground;
+    @apply bg-gradient-to-b from-[rgb(var(--gradient-from))] to-[rgb(var(--gradient-to))] text-foreground;
+    min-height: 100vh;
+  }
+}
+
+/* Custom animations */
+@layer utilities {
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .backdrop-blur-sm {
+    backdrop-filter: blur(8px);
   }
 }

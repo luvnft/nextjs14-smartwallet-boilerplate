@@ -3,27 +3,22 @@
 import { useEffect, useState } from "react";
 import { useSmartWallet } from "@/hooks/useSmartWallet";
 import { motion } from "framer-motion"
-
 import { Loader2 } from "lucide-react";
-
 import {
     Drawer,
     DrawerClose,
     DrawerContent,
     DrawerDescription,
-    DrawerFooter,
     DrawerHeader,
     DrawerTitle,
+    DrawerFooter,
     DrawerTrigger,
-  } from "@/components/ui/drawer"
-
-
+} from "@/components/ui/drawer"
 
 export default function WalletOnboarding() {
     const { wallet, isConnected, isConnecting, chainId } = useSmartWallet();
-    const [connected, setConnected] = useState<boolean>(isConnected); // Local state management (client-side)
+    const [connected, setConnected] = useState<boolean>(isConnected);
 
-    // Check if coinbaseWalletExtension extension is injected before-hand to avoid compatibility issues.
     useEffect(() => {
         if (typeof window !== "undefined") {
             // @ts-expect-error
@@ -34,42 +29,65 @@ export default function WalletOnboarding() {
         }
     }, []);
     
-
     const useWallet = async () => {
         try {
-            const address = await wallet(); // Call the connectWallet function, this returns user's addresses [an array of]
-            console.log("Smart wallet generated successfully:", address); // Print out generated wallet
+            const address = await wallet();
+            console.log("Smart wallet generated successfully:", address);
         } catch (error) {
-            console.error("Error generating smart wallet:", error); // Error reporting
-        } finally {
-            // Optional: Add any finalization logic here
+            console.error("Error generating smart wallet:", error);
         }
     };
 
     return (
         <Drawer>
             <DrawerTrigger>
-                <motion.button whileTap={{ scale: 0.9 }} className="inline-flex items-center justify-center whitespace-nowrap transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 rounded-3xl w-40 py-3 px-6 bg-white hover:bg-white/80 text-black font-semibold text-sm">
-                        Create 🅰️ Wallo
+                <motion.button 
+                    whileTap={{ scale: 0.95 }}
+                    whileHover={{ scale: 1.02 }}
+                    className="w-full py-4 px-6 rounded-xl bg-gradient-to-r from-[#FFD700] to-[#A6192E] text-black font-bold text-lg shadow-lg"
+                >
+                    {connected ? "🅰️ Wallo Ready" : "✨ CREATE W🅰️LLO"}
                 </motion.button>
             </DrawerTrigger>
-            <DrawerContent className="flex justify-start items-center h-[600px]">
-                <DrawerHeader className="mt-auto text-center">
-                    <DrawerTitle className="text-3xl text-center">Don{"'"}t have a wallo?</DrawerTitle>
-                    <DrawerDescription className="text-md md:text-lg text-center">Create one in seconds to get started.</DrawerDescription>
+            <DrawerContent className="bg-[#1a1a1a] text-white h-[60vh]">
+                <DrawerHeader className="text-center mt-8">
+                    <DrawerTitle className="text-2xl">Don't have a W🅰️LLO?</DrawerTitle>
+                    <DrawerDescription className="text-[#FFD700]">
+                        Create one in seconds to get started 🚀
+                    </DrawerDescription>
                 </DrawerHeader>
-            <DrawerFooter className="flex flex-row w-full justify-between">
-                <DrawerClose className="w-full">
-                <motion.button whileTap={{ scale: 0.9 }} className="inline-flex w-full items-center justify-center whitespace-nowrap transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 rounded-3xl py-3 px-6 bg-red-500 hover:bg-red-500/80 text-white font-semibold text-sm">
-                    Cancel
-                </motion.button>
-                </DrawerClose>
-                <motion.button whileTap={{ scale: 0.9 }} onClick={useWallet} disabled={isConnecting} className="inline-flex items-center justify-center whitespace-nowrap transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 rounded-3xl w-full py-3 px-6 bg-blue-500 hover:bg-blue-500/80 text-white font-semibold text-sm"
-                    aria-label={connected ? "Connected" : "Create 🅰️ Wallo"}
-                >
-                    {isConnecting ? <Loader2 className="animate-spin w-5 h-5 text-white/80" /> : connected ? `Connected` : "Create 🅰️ Wallo"}
-                </motion.button>
-            </DrawerFooter>
+                
+                <div className="flex-1 flex items-center justify-center">
+                    <div className="text-center space-y-2">
+                        <div className="text-5xl">🏦</div>
+                        <p className="text-sm opacity-80">Let's see what Zone has the most $ATL LUV</p>
+                    </div>
+                </div>
+                
+                <DrawerFooter className="flex flex-row gap-4">
+                    <DrawerClose className="w-full">
+                        <motion.button 
+                            whileTap={{ scale: 0.95 }}
+                            className="w-full py-3 rounded-xl bg-black/50 text-white font-medium"
+                        >
+                            Cancel
+                        </motion.button>
+                    </DrawerClose>
+                    <motion.button 
+                        whileTap={{ scale: 0.95 }}
+                        onClick={useWallet} 
+                        disabled={isConnecting}
+                        className="w-full py-3 rounded-xl bg-gradient-to-r from-[#FFD700] to-[#A6192E] text-black font-bold"
+                    >
+                        {isConnecting ? (
+                            <Loader2 className="animate-spin w-5 h-5 mx-auto text-black" />
+                        ) : connected ? (
+                            "✅ Connected"
+                        ) : (
+                            "Create My Wallo"
+                        )}
+                    </motion.button>
+                </DrawerFooter>
             </DrawerContent>
         </Drawer>
     );
