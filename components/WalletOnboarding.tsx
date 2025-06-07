@@ -41,6 +41,7 @@ export default function WalletOnboarding() {
     return (
         <Drawer>
             <DrawerTrigger>
+                <div className="flex justify-center"></div>
                 <motion.button 
                     whileTap={{ scale: 0.95 }}
                     whileHover={{ scale: 1.02 }}

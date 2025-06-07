@@ -19,7 +19,7 @@ export default function Home() {
       {/* Main content */}
       <div className="flex flex-col items-center w-full max-w-md space-y-8">
         {/* Hero section */}
-        <section className="text-center space-y-5">
+        <section className="text-center space-y-5 mt-20">  
           <h1 className="text-5xl font-extrabold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-[#FFD700] to-white drop-shadow">
             IN $ATL <br className="md:hidden" /> WE TRUST
           </h1>
