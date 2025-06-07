@@ -39,7 +39,8 @@ export default function Home() {
             W🅰️LLO is Atlanta's trusted loyalty rewards wallet 💰
           </p>
           <p className="text-sm opacity-80">
-            <p className="text-sm opacity-80">&quot;Let&#39;s see on-chain who&#39;s running $ATL&quot; 🎤🏙️</p>
+          &quot;Let&#39;s see on-chain who&#39;s running $ATL&quot; 🎤🏙️
+          </p>
         </div>
 
         {/* Wallet onboarding */}
