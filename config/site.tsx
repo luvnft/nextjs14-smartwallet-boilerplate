@@ -30,13 +30,14 @@ How it works:
   mainNav: [
     {
       title: 'Home',
-      href: '/',
+      href: 'https://wallo.atl5d.com',
     },
   ],
   links: {
     twitter: 'https://twitter.com/fewmoreliqs',
     github: 'https://github.com/rokitgg/nextjs14-smartwallet-boilerplate',
     docs: ''
+    discord: "https://discord.com/servers/atl5d-1244450286337003520", 
   },
   coinbase: { 
     options: 'smartWalletOnly' as Preference
