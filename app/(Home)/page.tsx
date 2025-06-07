@@ -2,9 +2,8 @@ import { siteConfig } from "@/config/site";
 import { Twitter } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaDiscord, FaTiktok, FaCrown, FaMedal } from 'react-icons/fa';
+import { FaDiscord, FaTiktok, FaMedal } from 'react-icons/fa';
 
-import SmartWallet from "@/components/SmartWallet";
 import WalletOnboarding from "@/components/WalletOnboarding";
 
 const topHolders = [
@@ -19,7 +18,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-8 md:p-16 bg-gradient-to-b from-[#A6192E] to-black text-white">
       {/* Header with spiritual touch */}
-      <header className="w-full flex justify-between items-center">
+      <header className="w-full flex justify-between items-center mb-8">
         <div className="flex items-center space-x-2">
           <span className="text-2xl">🙏🏾</span>
           <h1 className="text-xl font-bold">WALLO</h1>
@@ -34,13 +33,13 @@ export default function Home() {
         {/* Hero section */}
         <div className="text-center space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#FFD700] to-white">
-            ATL5D $ATL
+            IN $ATL WE TRUST
           </h1>
           <p className="text-lg opacity-90">
-            Atlanta Loyalty Rewards Wallet 💰
+            Wallo is Atlanta's trusted loyalty rewards wallet 💰
           </p>
           <p className="text-sm opacity-80">
-            &quot;A Bankhead king who loved his city more than music&quot; 🎤🏙️
+            &quot;Let's see on-chain who's running $ATL&quot; 🎤🏙️
           </p>
         </div>
 
@@ -69,7 +68,7 @@ export default function Home() {
       </div>
 
       {/* Footer with social links */}
-      <footer className="w-full flex flex-col items-center space-y-6">
+      <footer className="w-full flex flex-col items-center space-y-6 mt-12">
         {/* Social links */}
         <div className="flex space-x-6">
           <Link href="https://www.tiktok.com/@atl5d" target="_blank" rel="noopener noreferrer">
@@ -91,6 +90,7 @@ export default function Home() {
             be redeemed for Atlanta ATL5D (D-commerce) marketing.
           </p>
         </div>
+
         {/* Original purpose */}
         <code className="text-xs text-center opacity-60 max-w-lg">
           {siteConfig.description}
