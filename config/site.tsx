@@ -4,7 +4,7 @@ type Preference = 'all' | 'smartWalletOnly' | 'eoaOnly';
 
 // Define the site configuration object
 export const siteConfig = {
-  name: 'WALLO', // The name of the application
+  name: 'W🅰️LLO', // The name of the application
   description:
     `🌟 W🅰️LLO Mission: ATL5D × Coinbase collab to bank the unbanked and empower ATL creators 🏦✨
 
